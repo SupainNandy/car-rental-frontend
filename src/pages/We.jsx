@@ -1,7 +1,7 @@
 import React from "react";
 // Ensure these paths match your project structure
 import supainImg from "../Profile/supain.jpg";
-import lipeImg from "../Profile/lipe.jpeg";
+import lipeImg from "../Profile/Lipe.jpeg";
 import suryaImg from '../Profile/surya.jpg';
 import {
   Crown,

@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { authContext } from "../context/contextApi";
+import { Link } from "react-router-dom";
 
 const User = () => {
   const { setLoggedIn, setName } = useContext(authContext);
@@ -279,9 +280,23 @@ const User = () => {
           </button>
 
           <ul className={`cr-nav-links${menuOpen ? " open" : ""}`}>
-            <li><a href="/user/dashboard" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="/user/mybookings" onClick={() => setMenuOpen(false)}>My Bookings</a></li>
-            <li><a href="/user/user-profile" onClick={() => setMenuOpen(false)}>Profile</a></li>
+            <li>
+  <Link to="/user/dashboard" onClick={() => setMenuOpen(false)}>
+    Home
+  </Link>
+</li>
+
+<li>
+  <Link to="/user/mybookings" onClick={() => setMenuOpen(false)}>
+    My Bookings
+  </Link>
+</li>
+
+<li>
+  <Link to="/user/user-profile" onClick={() => setMenuOpen(false)}>
+    Profile
+  </Link>
+</li>
             <div className="cars-grid">
  
 </div>

@@ -280,33 +280,31 @@ const User = () => {
           </button>
 
           <ul className={`cr-nav-links${menuOpen ? " open" : ""}`}>
-            <li>
-        <li>
-  <Link to="/user/dashboard" onClick={() => setMenuOpen(false)}>
-    Home
-  </Link>
-</li>
+  <li>
+    <Link to="/user/dashboard" onClick={() => setMenuOpen(false)}>
+      Home
+    </Link>
+  </li>
 
-<li>
-  <Link to="/user/mybookings" onClick={() => setMenuOpen(false)}>
-    My Bookings
-  </Link>
-</li>
+  <li>
+    <Link to="/user/mybookings" onClick={() => setMenuOpen(false)}>
+      My Bookings
+    </Link>
+  </li>
 
-<li>
-  <Link to="/user/user-profile" onClick={() => setMenuOpen(false)}>
-    Profile
-  </Link>
-</li>
+  <li>
+    <Link to="/user/user-profile" onClick={() => setMenuOpen(false)}>
+      Profile
+    </Link>
+  </li>
 
-</li>
-            <div className="cars-grid">
- 
-</div>
-            <li>
-              <button className="cr-logout" onClick={handleLogout}>Logout</button>
-            </li>
-          </ul>
+  <li>
+    <button className="cr-logout" onClick={handleLogout}>
+      Logout
+    </button>
+  </li>
+</ul>
+
         </div>
       </nav>
       

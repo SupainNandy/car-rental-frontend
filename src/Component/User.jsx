@@ -264,10 +264,10 @@ const User = () => {
 
       <nav className={`cr-navbar${scrolled ? " scrolled" : ""}`}>
         <div className="cr-inner">
-          <a href="/" className="cr-brand">
+          <Link to="/" className="cr-brand">
             <span className="cr-brand-main">Royal Route</span>
             <span className="cr-brand-sub">Premium Fleet Services</span>
-          </a>
+          </Link>
 
           <div className="cr-ornament" />
 
@@ -281,6 +281,7 @@ const User = () => {
 
           <ul className={`cr-nav-links${menuOpen ? " open" : ""}`}>
             <li>
+        <li>
   <Link to="/user/dashboard" onClick={() => setMenuOpen(false)}>
     Home
   </Link>
@@ -296,6 +297,8 @@ const User = () => {
   <Link to="/user/user-profile" onClick={() => setMenuOpen(false)}>
     Profile
   </Link>
+</li>
+
 </li>
             <div className="cars-grid">
  

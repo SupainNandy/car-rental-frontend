@@ -25,7 +25,7 @@ const LoginUser = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/users/login",
+        "https://car-rental-backend-7bgb.onrender.com/users/login",
         loginData
       );
 

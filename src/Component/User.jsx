@@ -17,9 +17,9 @@ const User = () => {
       let url;
 
       if (searchTerm.trim() === "") {
-        url = "http://localhost:8000/cars";
+        url = "https://car-rental-backend-7bgb.onrender.com/cars";
       } else {
-        url = `http://localhost:8000/cars/search?q=${searchTerm}`;
+        url = `https://car-rental-backend-7bgb.onrender.com/cars/search?q=${searchTerm}`;
       }
 
       const res = await fetch(url);

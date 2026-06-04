@@ -58,7 +58,7 @@ const BookingPage = () => {
       setLoading(true);
       const userToken = localStorage.getItem("userToken");
       await axios.post(
-        `http://localhost:8000/bookings/book/${carId}`,
+        `https://car-rental-backend-7bgb.onrender.com/bookings/book/${carId}`,
         { pickupDate: form.pickupDate, returnDate: form.returnDate },
         { headers: { Authorization: `Bearer ${userToken}` } }
       );

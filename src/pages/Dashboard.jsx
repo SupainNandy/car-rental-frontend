@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const fetchCars = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/cars");
+      const res = await axios.get("https://car-rental-backend-7bgb.onrender.com/cars");
       setCars(res.data.data);
     } catch (error) {
       console.log(error);

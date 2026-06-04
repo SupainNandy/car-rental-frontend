@@ -16,7 +16,7 @@ const UserProfile = () => {
       const token = localStorage.getItem("userToken");
 
       const res = await fetch(
-        "http://localhost:8000/users/profile",
+        "https://car-rental-backend-7bgb.onrender.com/users/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ const UserProfile = () => {
       }
 
       const res = await fetch(
-        "http://localhost:8000/users/update",
+        "https://car-rental-backend-7bgb.onrender.com/users/update",
         {
           method: "PUT",
           headers: {
@@ -85,7 +85,7 @@ const UserProfile = () => {
       const token = localStorage.getItem("userToken");
 
       const res = await fetch(
-        "http://localhost:8000/users/delete",
+        "https://car-rental-backend-7bgb.onrender.com/users/delete",
         {
           method: "DELETE",
           headers: {

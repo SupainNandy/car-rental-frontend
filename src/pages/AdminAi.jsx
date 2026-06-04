@@ -38,7 +38,7 @@ const AdminAI = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/agent/",
+        "https://car-rental-backend-7bgb.onrender.com/agent/",
         {
           question: currentQuestion,
         }

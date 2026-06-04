@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:8000";
+const API = "https://car-rental-backend-7bgb.onrender.com";
 
 const AdminLogin = () => {
   const navigate = useNavigate();

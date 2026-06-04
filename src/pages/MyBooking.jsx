@@ -14,7 +14,7 @@ const MyBookings = () => {
       setLoading(true);
       setError(null);
       const userToken = localStorage.getItem("userToken");
-      const res = await axios.get("http://localhost:8000/bookings/my-bookings", {
+      const res = await axios.get("https://car-rental-backend-7bgb.onrender.com/bookings/my-bookings", {
         headers: { Authorization: `Bearer ${userToken}` },
       });
       setBookings(res.data.bookings);
@@ -32,7 +32,7 @@ const MyBookings = () => {
     try {
       const userToken = localStorage.getItem("userToken");
       await axios.put(
-        `http://localhost:8000/bookings/cancel/${bookingId}`,
+        `https://car-rental-backend-7bgb.onrender.com/bookings/cancel/${bookingId}`,
         {},
         { headers: { Authorization: `Bearer ${userToken}` } }
       );
@@ -46,7 +46,7 @@ const MyBookings = () => {
     try {
       const userToken = localStorage.getItem("userToken");
       await axios.put(
-        `http://localhost:8000/bookings/update/${editingBooking._id}`,
+        `https://car-rental-backend-7bgb.onrender.com/bookings/update/${editingBooking._id}`,
         {
           pickupDate: editingBooking.pickupDate,
           returnDate: editingBooking.returnDate,

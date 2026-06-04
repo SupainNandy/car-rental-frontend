@@ -25,7 +25,7 @@ const RegisterUser = () => {
         };
 
         const response = await axios.post(
-          "http://localhost:8000/users/register",
+          "https://car-rental-backend-7bgb.onrender.com/users/register",
           userData
         );
 
